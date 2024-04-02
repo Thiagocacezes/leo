@@ -1,80 +1,211 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop </title>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Site responsivo</title>
-    </head>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <body>
-        <div class="container">
-            <!-- nav -->
-            <nav>
-                <div class="logo">
-                    <a href="index.html">Oreon Consultoria</a>
-                </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <button onclick="location.href='https://api.whatsapp.com/send?phone=+5511959911259&text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AA.'">Contate-me!</button>
-                </ul>
-                <div class="menu-icon">
-                    <img src="assets/menu.png">
-                </div>
-            </nav>
-            <!-- end nav -->
-            <main>
-                <div class="text-bx">
-                    <h1>Seu negócio começa agora <b> Consultoria no seu estilo!
-                        </b>
-                    </h1>
-                    <p>
-                        "Bem-vindo ao universo da prosperidade financeira! Eu sou Leonardo Correia, muito mais do que um consultor financeiro. 
-                        Sou um guia, um parceiro dedicado a desvendar os segredos do sucesso financeiro e a construir um futuro sólido para você. 
-                        Com uma abordagem única e personalizada, meu objetivo é não apenas otimizar seus investimentos, 
-                        mas também educá-lo sobre como tomar as melhores decisões financeiras. 
-                        Ao longo dos anos, tenho ajudado indivíduos a alcançar seus sonhos e objetivos financeiros, 
-                        criando um impacto duradouro em suas vidas. Vamos embarcar nesta jornada juntos, 
-                        rumo à liberdade financeira e à realização de seus maiores sonhos!"
-                    </p>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./style.css">
 
-                    <div class="input-bx">
-                        <!--<input type="email" placeholder="Endereço de email">-->
-                        <button onclick="location.href='https://api.whatsapp.com/send?phone=+5511959911259&text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AA.'">Contate-me!</button>
-                    </div>
+</head>
+<body>
+    
+<!-- header section starts  -->
 
-                    <div class="medias-socias">
-                        <a href="#"> <i class="fa fa-instagram"></i> </a>
-                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                        <a href="#"> <i class="fa fa-youtube-play"></i> </a>
-                        <a href="#"> <i class="fa fa-whatsapp"></i> </a>
+<header class="header">
 
-                    </div>
-                </div>
+    <a href="#" class="logo">
+        <img src="images/leo2.jpg" alt="">
+    </a>
 
-                <div class="img-bx">
-                    <img id="leo" src="assets/leo2.jpg">
-                </div>
-                <section id="leo">
-                    <div>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#review">review</a>
+        <a href="#contact">contato</a>
+        
+    </nav>
 
-                    </div>
-                </section>
-            </main>
-        </div>
+    <div class="icons">
+        
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
 
-        <script src="js.js"></script>
-        <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css"> <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=5511959911259&text=Ol%C3%A1..."> <div class="rwb-tooltip">Fale Conosco!</div> <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"> </a>
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+</header>
 
-    </body>
+<!-- header section ends -->
+
+<!--home section starts-->
+<section class="home" id="home">
+	<div class="content">
+		<h3>Sua consultoria Personalizada!</h3>
+		<p>AOrionConsultoria está aqui para ajuda-lo a entender e ainvestir con segurânça!</p>
+		<a href="#contact" class="btn">Contate</a>
+	</div>
+</section>
+<!--home section ends-->
+<!-- about section starts -->
+<section class="about" id="about">
+	<h1 class="heading"><span>Sobre</span> Nós</h1>
+	<div class="row">
+		<div class="image">
+			<img src="images/leo2.jpg" alt="">
+		</div>
+		<div class="content">
+			<h3>O que Nos torna Especial para você?</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel?</p>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet enim quod veritatis, nihil voluptas culpa! Neque consectetur obcaecati sapiente?</p>
+			 <a href="#contact" class="btn">Saiba Mais</a>
+		</div>
+	</div>
+</section>
+
+<section class="review" id="review">
+	<h1 class="heading">Nossos <span> review</span></h1>
+	<div class="box-container">
+		<div class="box">
+			<img src="images/quote-img.png" alt="" class="quote">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+			<img src="images/pic-1.png" class="user" alt="">
+			<h3>jone doe</h3>
+			<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star-half-alt"></i>
+			 </div>
+
+		</div>
+		<div class="box">
+			<img src="images/quote-img.png" alt="" class="quote">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+			<img src="images/pic-2.png" class="user" alt="">
+			<h3>jone doe</h3>
+			<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star-half-alt"></i>
+			 </div>
+
+		</div>
+		<div class="box">
+			<img src="images/quote-img.png" alt="" class="quote">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+			<img src="images/pic-3.png" class="user" alt="">
+			<h3>jone doe</h3>
+			<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star-half-alt"></i>
+			 </div>
+
+		</div>
+	</div>
+</section>
+<!-- review section ends -->
+
+<!-- contact section srarts -->
+<section class="contact" id="contact">
+	<h1 class="heading">contate <span> </span></h1>
+ <div class="row">
+	<!--<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m188720016!2d-8.953158243896494!3d38.70622983705164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1a59d59b135b1f%3A0x20414d6c3452f10!2sMontijo%2C%20Portugal!5e0!3m2!1sen!2spt!4v1648944680302!5m2!1sen!2spt" allowfullscreen="" loading="lazy" frameborder="0"></iframe>-->
+	<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58609.44690144812!2d-47.57212102608708!3d-21.477944700172524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b988587fe5d3a7%3A0x8c8f19c83c7d6e7d!2sS%C3%A3o%20Sim%C3%A3o%2C%20SP%2C%20Brazil!5e0!3m2!1sen!2sus!4v1648946091038!5m2!1sen!2sus" allowfullscreen="" loading="lazy" frameborder="0"></iframe>
+	<form action="">
+		<h3>Estamos aqui</h3>
+		<div class="inputBox">
+				<span class="fas fa-user"></span>
+				<input type="text" placeholder="Name">
+		</div>
+		<div class="inputBox">
+				<span class="fas fa-envelope"></span>
+				<input type="email" placeholder="Email">
+		</div>
+		<div class="inputBox">
+				<span class="fas fa-phone"></span>
+				<input type="number" placeholder="Number">
+		</div>
+		<input type="submit" value="contact now" class="btn">
+    </form>
+
+   </div>
+  </div>
+</section>
+
+
+<!-- footer section starts -->
+
+<section class="footer">
+
+	<div class="share">
+			<a href="#" class="fab fa-facebook-f"></a>
+			<a href="#" class="fab fa-twitter"></a>
+			<a href="#" class="fab fa-instagram"></a>
+			<a href="#" class="fab fa-linkedin"></a>
+			<a href="#" class="fab fa-pinterest"></a>
+	</div>
+
+	<div class="links">
+			<a href="#">home</a>
+			<a href="#">sobre</a>
+			<a href="#">review</a>
+			<a href="#">contato</a>
+			
+	</div>
+	<div class="credit">
+		created by 
+		<span class="developer-info"> <a href="" target="">TCDigital.pt</a></span> | all rights reserved <br> <br>
+		 
+	</div>
+</section>
+
+<link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css"> <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=5511959911259&text=Ol%C3%A1..."> <div class="rwb-tooltip">Fale Conosco!</div> <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"> </a>
+
+<script>
+	
+let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+    cartItem.classList.remove('active');
+}
+
+let searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+    navbar.classList.remove('active');
+    cartItem.classList.remove('active');
+}
+
+let cartItem = document.querySelector('.cart-items-container');
+
+document.querySelector('#cart-btn').onclick = () =>{
+    cartItem.classList.toggle('active');
+    navbar.classList.remove('active');
+    searchForm.classList.remove('active');
+}
+
+window.onscroll = () =>{
+    navbar.classList.remove('active');
+    searchForm.classList.remove('active');
+    cartItem.classList.remove('active');
+}
+</script>
+
+</body>
 </html>
