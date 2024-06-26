@@ -389,42 +389,61 @@ section {
     font-weight: lighter;
 }
 
-/* review section*/
-.review .box-container {
+.blogs .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-.review .box-container .box {
+.blogs .box-container .box {
     border: var(--border);
-    text-align: center;
-    padding: 3rem 2rem;
 }
 
-.review .box-container .box p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color: #ccc;
-    padding: 2rem 0;
+.blogs .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
 }
 
-.review .box-container .box .user {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
+.blogs .box-container .box .image img {
+    height: 100%;
     object-fit: cover;
+    width: 100%;
 }
 
-.review .box-container .box h3 {
-    padding: 1rem 0;
-    font-size: 2rem;
+.blogs .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+
+
+.blogs .box-container .box .content {
+    padding: 2rem;
+}
+
+
+.blogs .box-container .box .content .title {
+    font-size: 2.5rem;
+    line-height: 1.5;
     color: #fff;
 }
 
-.review .box-container .box .stars i {
-    font-size: 1.5rem;
+.blogs .box-container .box .content .title:hover {
     color: var(--main-color);
+}
+
+.blogs .box-container .box .content span {
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.blogs .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
 }
 
 /*contact section*/
@@ -468,7 +487,7 @@ section {
     padding-left: 2rem;
 }
 
-.contact .row form .inputBox input {
+.contact .row form .inputBox a {
     width: 100%;
     padding: 2rem;
     font-size: 1.7rem;
